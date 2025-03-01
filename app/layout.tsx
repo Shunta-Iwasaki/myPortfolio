@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { dotGothic16, notoColorEmoji } from './font';
+import { dotGothic16 } from './font';
 import FixContent from "@/components/FixContent";
 
 export const metadata: Metadata = {
