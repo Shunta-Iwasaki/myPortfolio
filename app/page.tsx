@@ -1,4 +1,4 @@
-import { notoColorEmoji } from "./layout"
+import { notoColorEmoji } from "@/app/font"
 
 export default function Home() {
   return (

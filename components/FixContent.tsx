@@ -1,4 +1,4 @@
-import { notoColorEmoji } from '@/app/layout'
+import { notoColorEmoji } from '@/app/font'
 import React from 'react'
 
 function FixContent() {

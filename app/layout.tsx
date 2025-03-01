@@ -1,17 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { DotGothic16, Noto_Color_Emoji } from 'next/font/google';
+import { dotGothic16, notoColorEmoji } from './font';
 import FixContent from "@/components/FixContent";
-
-export const dotGothic16 = DotGothic16({
-  weight: '400',
-  subsets: ['latin'],
-});
-
-export const notoColorEmoji = Noto_Color_Emoji({
-  weight: '400',
-  subsets: ['emoji'],
-});
 
 export const metadata: Metadata = {
   title: "SHUNTA IWASAKI",
