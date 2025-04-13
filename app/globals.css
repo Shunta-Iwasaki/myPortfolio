@@ -1,2 +1,60 @@
 @import "tailwindcss";
+@import 'modern-normalize/modern-normalize.css';
 
+.contact-button-gradation {
+    background: linear-gradient(90deg, #8EACE2 0%, #3B63AB 100%);
+}
+.shadow-top {
+    box-shadow: 0 -2px 0 0 black;
+}
+.marquee-content {
+    animation: marquee-rtl 10s linear infinite;
+}
+
+.marquee-item {
+    padding: 0 1rem;
+    font-size: 6vh;
+}
+
+@keyframes marquee-rtl {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-33.3%);
+    }
+}
+.helicopter {
+    animation: helicopter-animation 5s ease-in-out infinite alternate;
+}
+@keyframes helicopter-animation {
+    0% {
+        top: 100px;
+    }
+    100% {
+        top: 250px;
+    }
+}
+.rotate {
+    animation: rotation 8s linear infinite;
+}
+@keyframes rotation {
+    0% { 
+        transform:rotate(0);
+    }
+    100% { 
+        transform:rotate(-360deg); 
+    }
+}
+
+.animated-text span {
+    display: inline-block;
+    opacity: 0;
+    animation: appear 0s linear forwards;
+}
+  
+@keyframes appear {
+    to {
+        opacity: 1;
+    }
+}
