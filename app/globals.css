@@ -58,3 +58,12 @@
         opacity: 1;
     }
 }
+
+.hover-scale-up {
+    transition: 0.1s linear;
+}
+.hover-scale-up:hover {
+    scale: 1.025;
+    transition: 0.1s linear;
+    opacity: 0.8;
+}

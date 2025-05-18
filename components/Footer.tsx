@@ -17,9 +17,9 @@ const Footer = () => {
         <div className="flex justify-center items-center gap-9 mt-4 text-[12px]">
             <p>MY SNS ACCOUNT <span className={`${notoColorEmoji.className}`}>👉👉👉</span></p>
             <div className="flex gap-1">
-            <a href="https://x.com/Breeze_Group/"><img src="https://placehold.jp/20x20.png" alt="X（旧Twitter）" /></a>
-            <a href="https://www.instagram.com/breezegroup_officialaccount/"><img src="https://placehold.jp/20x20.png" alt="instagram" /></a>
-            <a href="https://www.facebook.com/bzg.shared/"><img src="https://placehold.jp/20x20.png" alt="facebook" /></a>
+            <a href="https://x.com/Breeze_Group/"><img src="./img/icon_x.svg" alt="X（旧Twitter）" /></a>
+            <a href="https://www.instagram.com/breezegroup_officialaccount/"><img src="./img/icon_instagram.svg" alt="instagram" /></a>
+            <a href="https://www.facebook.com/bzg.shared/"><img src="./img/icon_facebook.svg" alt="facebook" /></a>
             </div>
         </div>
         <p className="text-[10px] mt-6">2025 SHUNTA IWASAKI</p>

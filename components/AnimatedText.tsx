@@ -7,15 +7,20 @@ type AnimatedTextProps = {
 };
 
 const AnimatedText = ({ text }: AnimatedTextProps) => {
-  return (
-    <div className="animated-text">
-      {text.split("").map((char, i) => (
-        <span key={i} style={{ animationDelay: `${i * 0.05}s` }}>
+  const elements: React.ReactNode[] = [];
+
+  text.split("<br>").forEach((line, i) => {
+    line.split("").forEach((char, j) => {
+      elements.push(
+        <span key={`${i}-${j}`} style={{ animationDelay: `${(i * 10 + j) * 0.05}s` }}>
           {char}
         </span>
-      ))}
-    </div>
-  );
+      );
+    });
+    elements.push(<br key={`br-${i}`} />);
+  });
+
+  return <div className="animated-text">{elements}</div>;
 };
 
 export default AnimatedText;
