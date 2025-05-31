@@ -6,6 +6,9 @@ import FixContent from "@/components/FixContent";
 export const metadata: Metadata = {
   title: "SHUNTA IWASAKI",
   description: "岩崎俊太のポートフォリオサイトです。",
+  icons: {
+    icon: '/favicon.ico'
+  }
 };
 
 export default function RootLayout({

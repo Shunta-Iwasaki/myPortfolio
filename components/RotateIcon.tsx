@@ -39,7 +39,7 @@ const RotateIcon = ({icon, coefficient}: RotateIconProps) => {
         transition: "transform 0.1s linear",
       }}
     >
-      <span className={`${notoColorEmoji.className} text-[2vw]`}>{icon}</span>
+      <span className={`${notoColorEmoji.className} md:text-[2vw] text-[6vw]`}>{icon}</span>
     </div>
   );
 };

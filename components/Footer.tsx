@@ -10,12 +10,15 @@ const Footer = () => {
             after:content-[] after:absolute after:right-2 after:top-1.5 after:block after:w-[10px] after:h-[10px] after:rounded-[50%] after:bg-white after:border-2"></div>
         <div className="text-white text-center">
         <div className="flex justify-center mt-4">
-            <FooterCard emoji="🖥" text="MY WORK" />
-            <FooterCard emoji="📰" text="NEWS" />
-            <FooterCard emoji="💬" text="CONTACT" />
+            <FooterCard emoji="🖥" text="MY WORK" href="#myWork" />
+            <FooterCard emoji="📰" text="NEWS" href="#news" />
+            <FooterCard emoji="💬" text="CONTACT" href="#contact"  />
         </div>
         <div className="flex justify-center items-center gap-9 mt-4 text-[12px]">
-            <p>MY SNS ACCOUNT <span className={`${notoColorEmoji.className}`}>👉👉👉</span></p>
+            <div className='flex gap-2'>
+              <p>MY SNS ACCOUNT</p>
+              <span className={`${notoColorEmoji.className} translate-y-[1px] transform-x`}>👉👉👉</span>
+            </div>
             <div className="flex gap-1">
             <a href="https://x.com/Breeze_Group/"><img src="./img/icon_x.svg" alt="X（旧Twitter）" /></a>
             <a href="https://www.instagram.com/breezegroup_officialaccount/"><img src="./img/icon_instagram.svg" alt="instagram" /></a>

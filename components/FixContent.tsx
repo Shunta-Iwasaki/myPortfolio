@@ -3,12 +3,14 @@ import React from 'react'
 import RotateIcon from './RotateIcon';
 import Walkman from './Walkman';
 import AnimatedText from './AnimatedText';
+import AnimatedTextWrapper from './AnimatedTextWrapper';
 
 function FixContent() {
   return (
-    <div className='fixed w-[45vw] h-full border-r-2 items-center'>
+    <div className='md:fixed md:w-[45vw] h-full border-r-2 items-center
+        sm:relative sm:w-[100vw]'>
         <header className='flex justify-between items-center h-[14vh] pr-2'>
-            <h1 className='dotGothic16 text-center text-[5vh]'>
+            <h1 className='dotGothic16 text-center md:text-[5vh] text-[4vh]'>
                 <p>SHUNTA</p>
                 <p>IWASAKI</p>
             </h1>
@@ -34,18 +36,18 @@ function FixContent() {
         </div>
         <div className='bg-[#3B63AB] h-[72vh]'>
             <div className='bg-white w-[90%] h-[80%] mx-auto border-2 rounded-[8px] translate-y-[8%] rounded-br-[0]
-                before:bg-white before:content-[] before:border-2 before:border-t-0 before:w-[24%] before:h-[8%] before:block before:absolute before:right-[-2px] before:bottom-[calc(-8%)]'>
+                before:bg-white before:content-[] before:border-2 before:border-t-0 before:w-[24%] before:h-[8%] before:block before:absolute before:right-[-2px] before:bottom-[calc(-8%+0.75px)]'>
                 <img className='lg:w-[40%] absolute lg:top-[55%] lg:left-[1vw] lg:translate-y-[-50%] lg:translate-x-[0]
                     w-[50%] top-[unset] bottom-[0] left-[50%] translate-y-[0] translate-x-[-50%]' src="./img/img_mainman.svg" alt="岩崎俊太" />
                 <div className='absolute flex flex-col justify-between lg:top-[38%] lg:right-0 lg:text-[2.5vw] text-center lg:w-[60%] lg:h-[22vh]
                     top-[10%] right-0 text-[4vw] w-[100%] h-[20vh]'>
-                    <AnimatedText text="WELCOME　TO　MY<br>PORTFOLIO　SITE!!" />
+                    <AnimatedTextWrapper />
                     <div>
-                        <div className='flex lg:text-[20px] justify-center mb-3
+                        <div className='flex lg:text-[20px] justify-center mb-3 gap-1
                             text-[24px]'>
-                            <span className={`${notoColorEmoji.className} translate-y-0.5`}>👇</span>
+                            <span className={`${notoColorEmoji.className} translate-y-0.5 transform-y`}>👇</span>
                             <p>click to sns</p>
-                            <span className={`${notoColorEmoji.className} translate-y-0.5`}>👇</span>
+                            <span className={`${notoColorEmoji.className} translate-y-0.5 transform-y`}>👇</span>
                         </div>
                         <div className='flex justify-center gap-4 h-[3vh]'>
                             <img src="./img/icon_x.svg" alt="X（旧Twitter）" />
