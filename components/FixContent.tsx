@@ -2,7 +2,6 @@ import { notoColorEmoji } from '@/app/font'
 import React from 'react'
 import RotateIcon from './RotateIcon';
 import Walkman from './Walkman';
-import AnimatedText from './AnimatedText';
 import AnimatedTextWrapper from './AnimatedTextWrapper';
 
 function FixContent() {
