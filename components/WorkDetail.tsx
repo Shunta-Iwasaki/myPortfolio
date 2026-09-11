@@ -20,15 +20,11 @@ export default function WorkDetail({ data }: Props) {
                 </div>
             </dl>
 
-            <h4 className="font-bold mt-4 mb-2">概要</h4>
-            <p className="mb-4">{data.overview}</p>
+            <h4 className="font-bold mt-4 mb-2">■概要</h4>
+            <div className="mb-4">{data.overview}</div>
 
-            <h4 className="font-bold mb-2">工夫した点</h4>
-            <ul className="list-disc pl-5">
-                {data.points.map((point, index) => (
-                    <li key={index}>{point}</li>
-                ))}
-            </ul>
+            <h4 className="font-bold mb-2">■工夫した点</h4>
+            <div className="mb-4">{data.points}</div>
 
             {data.url && (
                 <a
