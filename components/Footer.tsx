@@ -1,6 +1,5 @@
 import React from "react";
 import FooterCard from "./FooterCard";
-import { notoColorEmoji } from "@/app/font";
 
 const Footer = () => {
     const year = new Date().getFullYear();
@@ -21,7 +20,7 @@ const Footer = () => {
                     <div className="flex gap-2">
                         <p>MY SNS ACCOUNT</p>
                         <span
-                            className={`${notoColorEmoji.className} translate-y-[1px] transform-x`}
+                            className={`emoji translate-y-[1px] transform-x`}
                         >
                             👉👉👉
                         </span>

@@ -1,4 +1,3 @@
-import { notoColorEmoji } from "@/app/font";
 
 type contentHeaderProps = {
     title: string;
@@ -20,14 +19,14 @@ function ContentHeader({ title, emoji, side }: contentHeaderProps) {
                 <div className="text-[24px] relative">
                     <h2 className="text-center text-white relative z-20">
                         {title}
-                        <span className={`${notoColorEmoji.className} pl-3`}>
+                        <span className={`emoji pl-3`}>
                             {emoji}
                         </span>
                     </h2>
                     <p className="absolute top-0 left-[50%] translate-x-[calc(-50%+2px)] translate-y-[2px] z-10">
                         {title}
                         <span
-                            className={`${notoColorEmoji.className} opacity-0 pl-3`}
+                            className={`emoji opacity-0 pl-3`}
                         >
                             🖥
                         </span>

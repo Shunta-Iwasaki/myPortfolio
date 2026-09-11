@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { dotGothic16 } from './font';
+import { dotGothic16, notoColorEmoji } from './font';
 import FixContent from "@/components/FixContent";
 
 export const metadata: Metadata = {
@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja" className="scroll-smooth">
-      <body className={`${dotGothic16.className}`}>
+      <body className={`${dotGothic16.className} ${notoColorEmoji.variable}`}>
         <FixContent />
         {children}
       </body>

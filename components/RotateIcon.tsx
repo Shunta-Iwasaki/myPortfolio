@@ -1,6 +1,5 @@
 "use client";
 
-import { notoColorEmoji } from "@/app/font";
 import { useEffect, useState } from "react";
 
 type RotateIconProps = {
@@ -39,7 +38,7 @@ const RotateIcon = ({icon, coefficient}: RotateIconProps) => {
         transition: "transform 0.1s linear",
       }}
     >
-      <span className={`${notoColorEmoji.className} md:text-[2vw] text-[6vw]`}>{icon}</span>
+      <span className={`emoji md:text-[2vw] text-[6vw]`}>{icon}</span>
     </div>
   );
 };

@@ -137,3 +137,13 @@
         opacity: 0;
     }
 }
+
+/* 絵文字用フォント指定。
+   OS 標準のカラー絵文字フォントを最優先にし、それらを持たない環境でのみ
+   Noto Color Emoji(webfont) にフォールバックする。
+   Safari は Noto Color Emoji の COLRv1 を描画できず絵文字が消えるため、
+   webfont を単独で指定してはいけない。 */
+.emoji {
+    font-family: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+        var(--font-noto-color-emoji), sans-serif;
+}

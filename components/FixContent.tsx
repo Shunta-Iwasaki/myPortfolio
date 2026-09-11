@@ -1,4 +1,3 @@
-import { notoColorEmoji } from "@/app/font";
 import React from "react";
 import RotateIcon from "./RotateIcon";
 import Walkman from "./Walkman";
@@ -78,13 +77,13 @@ function FixContent() {
                             text-[24px]"
                             >
                                 <span
-                                    className={`${notoColorEmoji.className} translate-y-0.5 transform-y`}
+                                    className={`emoji translate-y-0.5 transform-y`}
                                 >
                                     👇
                                 </span>
                                 <p>click to sns</p>
                                 <span
-                                    className={`${notoColorEmoji.className} translate-y-0.5 transform-y`}
+                                    className={`emoji translate-y-0.5 transform-y`}
                                 >
                                     👇
                                 </span>
@@ -115,7 +114,7 @@ function FixContent() {
                             <p key={i} className="p-[0_1.5rem]">
                                 ご覧いただきありがとうございます
                                 <span
-                                    className={`${notoColorEmoji.className} text-[4vh] relative top-[-0.5vh]`}
+                                    className={`emoji text-[4vh] relative top-[-0.5vh]`}
                                 >
                                     😆
                                 </span>
