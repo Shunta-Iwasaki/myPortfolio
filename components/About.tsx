@@ -12,7 +12,8 @@ function About() {
                     <h2 className="text-2xl inline">岩崎 俊太</h2>
                     <p className="inline-block ml-4">Shunta Iwasaki</p>
                 </span>
-                <div className="w-[50%] border-2 border-dashed">
+                <div className="md:w-[50%] border-2 border-dashed">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img src="./img/about_me.webp" alt="岩崎俊太" />
                 </div>
                 <h3 className="border-b-2 inline-block mt-3 mb-1 text-xl text-bold">

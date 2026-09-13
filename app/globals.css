@@ -1,6 +1,15 @@
 @import "tailwindcss";
 @import "modern-normalize/modern-normalize.css";
 
+.is-sp {
+    display: none;
+}
+@media (max-width: 768px) {
+    .is-sp {
+        display: inline;
+    }
+}
+
 .contact-button-gradation {
     background: linear-gradient(90deg, #8eace2 0%, #3b63ab 100%);
 }
@@ -144,6 +153,7 @@
    Safari は Noto Color Emoji の COLRv1 を描画できず絵文字が消えるため、
    webfont を単独で指定してはいけない。 */
 .emoji {
-    font-family: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    font-family:
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
         var(--font-noto-color-emoji), sans-serif;
 }

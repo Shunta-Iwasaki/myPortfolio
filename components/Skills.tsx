@@ -80,19 +80,19 @@ function Skills() {
             </table>
             <div className="w-[90%] mx-auto mb-7">
                 <ul className="w-fit">
-                    <li>
+                    <li className="md:mb-0 mb-2">
                         <Stars starNum={5} /> …
                         技術選定・設計を主導し、チームの技術水準を引き上げられる
                     </li>
-                    <li>
+                    <li className="md:mb-0 mb-2">
                         <Stars starNum={4} /> …
                         設計から実装まで一人で完結でき、レビューや指導ができる
                     </li>
-                    <li>
+                    <li className="md:mb-0 mb-2">
                         <Stars starNum={3} /> …
                         基本的な実装ができ、一人で実装を完結できる
                     </li>
-                    <li>
+                    <li className="md:mb-0 mb-2">
                         <Stars starNum={2} /> …
                         学習経験があり、簡単な実装ができる
                     </li>

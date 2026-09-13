@@ -20,10 +20,11 @@ function MyWorkCard({ id, title, tag, work, img }: myWorkCardProps) {
     return (
         <>
             <button
-                className="text-center relative cursor-pointer hover-scale-up border-1 p-3"
+                className="text-center relative cursor-pointer hover-scale-up border-1 p-3 w-[100%]"
                 onClick={() => setIsOpen(true)}
             >
                 <div className="h-[200px]">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                         className="mx-auto w-auto h-[100%] object-contain"
                         src={img}

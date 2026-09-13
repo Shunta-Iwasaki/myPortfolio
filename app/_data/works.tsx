@@ -6,6 +6,7 @@ export type WorkDetailData = {
     overview: React.ReactNode;
     points: React.ReactNode;
     url?: string;
+    imageUrl: string;
 };
 
 export const works: Record<string, WorkDetailData> = {
@@ -21,6 +22,7 @@ export const works: Record<string, WorkDetailData> = {
             </p>
         ),
         points: <p>セマンティックなマークアップを意識し、SEOに配慮</p>,
+        imageUrl: "./img/img_mywork_ec.png",
     },
     aruhi: {
         id: "aruhi",
@@ -51,6 +53,7 @@ export const works: Record<string, WorkDetailData> = {
             </p>
         ),
         url: "https://aruhi-music.github.io/official/",
+        imageUrl: "./img/img_mywork_aruhi.png",
     },
     pleasanit: {
         id: "pleasanit",
@@ -65,6 +68,7 @@ export const works: Record<string, WorkDetailData> = {
         ),
         points: <p>セマンティックなマークアップを意識し、SEOに配慮</p>,
         url: "https://pleasanit.co.jp/",
+        imageUrl: "./img/img_mywork_pleasanit.png",
     },
     bluenova: {
         id: "bluenova",
@@ -77,8 +81,24 @@ export const works: Record<string, WorkDetailData> = {
                 <br />
             </p>
         ),
-        points: <p>セマンティックなマークアップを意識し、SEOに配慮</p>,
+        points: (
+            <p>
+                <span style={{ fontWeight: "bold" }}>
+                    Zodを用いた、バリデーションの管理：
+                </span>
+                <br />
+                Zodでスキーマを定義し、それを元に型定義することで、管理を一元化しました。条件付き必須などの複雑な処理もRefineで実装しました。
+                <br />
+                <br />
+                <span style={{ fontWeight: "bold" }}>
+                    視覚的な世界観の提示：
+                </span>
+                <br />
+                FVに動画を配置、メンバー写真や動画コンテンツのサイト上部掲載などにより、視覚的にバンドのカッコ良さを伝えようと、コンテンツ配置を工夫しました。
+            </p>
+        ),
         url: "https://shunta-iwasaki.github.io/blue-nova/",
+        imageUrl: "./img/img_mywork_bn.png",
     },
     teetee: {
         id: "teetee",
@@ -91,8 +111,13 @@ export const works: Record<string, WorkDetailData> = {
                 <br />
             </p>
         ),
-        points: <p>セマンティックなマークアップを意識し、SEOに配慮</p>,
+        points: (
+            <p>
+                セマンティックなマークアップを意識し、SEOに配慮セマンティックなマークアップを意識し、SEOに配慮セマンティックなマークアップを意識し、SEOに配慮セマンティックなマークアップを意識し、SEOに配慮セマンティックなマークアップを意識し、SEOに配慮セマンティックなマークアップを意識し、SEOに配慮セマンティックなマークアップを意識し、SEOに配慮セマンティックなマークアップを意識し、SEOに配慮セマンティックなマークアップを意識し、SEOに配慮セマンティックなマークアップを意識し、SEOに配慮セマンティックなマークアップを意識し、SEOに配慮セマンティックなマークアップを意識し、SEOに配慮セマンティックなマークアップを意識し、SEOに配慮セマンティックなマークアップを意識し、SEOに配慮セマンティックなマークアップを意識し、SEOに配慮セマンティックなマークアップを意識し、SEOに配慮セマンティックなマークアップを意識し、SEOに配慮セマンティックなマークアップを意識し、SEOに配慮セマンティックなマークアップを意識し、SEOに配慮セマンティックなマークアップを意識し、SEOに配慮セマンティックなマークアップを意識し、SEOに配慮
+            </p>
+        ),
         url: "https://shunta-iwasaki.github.io/teeteeWater/",
+        imageUrl: "./img/img_mywork_teetee.png",
     },
     diary: {
         id: "diary",
@@ -124,6 +149,7 @@ export const works: Record<string, WorkDetailData> = {
             </p>
         ),
         url: "https://apps.apple.com/jp/app/%E7%89%87%E9%81%93%E4%BA%A4%E6%8F%9B%E6%97%A5%E8%A8%98-%E6%97%A5%E5%B8%B8%E3%81%A8%E6%87%BA%E6%82%94/id6773616871",
+        imageUrl: "./img/img_mywork_diary.png",
     },
     a: {
         id: "",
@@ -133,5 +159,6 @@ export const works: Record<string, WorkDetailData> = {
         overview: "",
         points: ["", ""],
         url: "",
+        imageUrl: "",
     },
 };

@@ -7,15 +7,15 @@ function FixContent() {
     return (
         <div
             className="md:fixed md:w-[45vw] h-full border-r-2 items-center
-        sm:relative sm:w-[100vw]"
+        relative w-[100vw]"
         >
-            <header>
-                <div className="flex justify-between items-center h-[14vh] pl-2 pr-5">
-                    <h1 className="dotGothic16 text-center md:text-[5vh] text-[4vh]">
+            <header className="md:relative md:w-auto fixed top-0 z-99 bg-white w-[100vw]">
+                <div className="flex justify-between items-center md:h-[14vh] md:pr-5 h-[7vh] pl-2 pr-2">
+                    <h1 className="dotGothic16 text-center md:text-[5vh] md:font-normal text-[16px] font-bold">
                         <p>SHUNTA</p>
                         <p>IWASAKI</p>
                     </h1>
-                    <div className="flex gap-2 text-[2vh] translate-x-[-20%]">
+                    <div className="flex gap-2 md:text-[4.5vh] text-[3vh] translate-x-[-20%]">
                         <RotateIcon icon="🎧" coefficient={0.2} />
                         <RotateIcon icon="📸" coefficient={0.6} />
                         <RotateIcon icon="🎣" coefficient={1} />
@@ -23,8 +23,8 @@ function FixContent() {
                     <Walkman />
                 </div>
 
-                <div className="relative overflow-hidden whitespace-nowrap flex items-center border-t-2 border-b-2 h-[7vh]">
-                    <div className="marquee-content flex text-[6vh]">
+                <div className="md:relative md:top-auto  overflow-hidden whitespace-nowrap flex items-center border-t-2 border-b-2 md:h-[7vh] h-[5vh]">
+                    <div className="marquee-content flex md:text-[6vh] text-[4vh]">
                         <a href="#about" className="p-[0_1.5rem]">
                             ABOUT ME
                         </a>
@@ -55,26 +55,27 @@ function FixContent() {
                     </div>
                 </div>
             </header>
-            <div className="bg-[#3B63AB] h-[72vh]">
+            <div className="bg-[#3B63AB] h-[72vh] md:mt-0 mt-[12vh]">
                 <div
                     className="bg-white w-[90%] h-[80%] mx-auto border-2 rounded-[8px] translate-y-[8%] rounded-br-[0]
                 before:bg-white before:content-[] before:border-2 before:border-t-0 before:w-[24%] before:h-[8%] before:block before:absolute before:right-[-2px] before:bottom-[calc(-8%+0.75px)]"
                 >
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
-                        className="lg:w-[40%] absolute lg:top-[55%] lg:left-[1vw] lg:translate-y-[-50%] lg:translate-x-[0]
-                    w-[50%] top-[unset] bottom-[0] left-[50%] translate-y-[0] translate-x-[-50%]"
+                        className="md:w-[40%] absolute md:top-[52%] md:left-[1vw] md:translate-y-[-50%] md:translate-x-[0]
+                    w-auto h-[30vh] top-[unset] bottom-[0] left-[50%] translate-y-[0] translate-x-[-50%]"
                         src="./img/img_mainman.svg"
                         alt="岩崎俊太"
                     />
                     <div
-                        className="absolute flex flex-col justify-between lg:top-[38%] lg:right-0 lg:text-[2.5vw] text-center lg:w-[60%] lg:h-[22vh]
-                    top-[10%] right-0 text-[4vw] w-[100%] h-[20vh]"
+                        className="absolute flex flex-col justify-between md:top-[36%] md:right-0 md:text-[2.5vw] text-center md:w-[60%] md:px-0
+                    top-[10%] right-0 text-[24px] w-[100%] gap-5 px-5"
                     >
                         <AnimatedTextWrapper />
                         <div>
                             <div
-                                className="flex lg:text-[20px] justify-center mb-3 gap-1
-                            text-[24px]"
+                                className="flex justify-center mb-3 gap-1
+                            text-[20px]"
                             >
                                 <span
                                     className={`emoji translate-y-0.5 transform-y`}

@@ -7,7 +7,8 @@ function MyWork() {
     return (
         <section id="myWork" className="relative">
             <ContentHeader title="MY WORK" emoji="💪" side="left-[-2px]" />
-            <div className="h-[40px] w-[40px] absolute top-[95px] left-[16px] rotate-[-20deg]">
+            <div className="h-[40px] w-[40px] absolute md:top-[95px] top-[80px] left-[16px] rotate-[-20deg]">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                     className="h-[100%]"
                     src="./img/img_workman.gif"
@@ -57,7 +58,7 @@ function MyWork() {
                 </div>
                 <div className="mb-8">
                     <MyWorkSubtitle title="アプリ制作" />
-                    <div className="w-[200px] gap-8">
+                    <div className="md:w-[200px] w-auto">
                         <MyWorkCard
                             id="diary"
                             title="片道交換日記"

@@ -29,18 +29,18 @@ function Modal({ isOpen, onClose, children }: ModalProps) {
 
     return createPortal(
         <div
-            className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-4"
+            className="fixed inset-0 z-100 flex items-center justify-center bg-black/60 p-4"
             onClick={onClose}
         >
             <div
-                className="relative w-full max-w-[480px] max-h-[85vh] overflow-y-auto rounded-lg bg-white p-6 text-left"
+                className="relative w-full max-w-[480px] h-[85vh] rounded-lg bg-white p-6 text-left"
                 onClick={(e) => e.stopPropagation()}
             >
                 <button
                     type="button"
                     onClick={onClose}
                     aria-label="閉じる"
-                    className="absolute top-3 right-3 text-xl leading-none cursor-pointer"
+                    className="absolute top-3 right-3 !text-2xl leading-none cursor-pointer"
                 >
                     ×
                 </button>
