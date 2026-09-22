@@ -27,16 +27,28 @@ const Footer = () => {
                     </div>
                     <div className="flex gap-1">
                         <a href="https://x.com/Breeze_Group/">
-                            <img src="./img/icon_x.svg" alt="X（旧Twitter）" />
+                            <img
+                                src="./img/icon_x.png"
+                                alt="X（旧Twitter）"
+                                width={15}
+                                height={15}
+                            />
                         </a>
                         <a href="https://www.instagram.com/breezegroup_officialaccount/">
                             <img
-                                src="./img/icon_instagram.svg"
+                                src="./img/icon_instagram.png"
                                 alt="instagram"
+                                width={15}
+                                height={15}
                             />
                         </a>
                         <a href="https://www.facebook.com/bzg.shared/">
-                            <img src="./img/icon_facebook.svg" alt="facebook" />
+                            <img
+                                src="./img/icon_facebook.png"
+                                alt="facebook"
+                                width={15}
+                                height={15}
+                            />
                         </a>
                     </div>
                 </div>
