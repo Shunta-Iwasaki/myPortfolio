@@ -90,18 +90,27 @@ function FixContent() {
                                 </span>
                             </div>
                             <div className="flex justify-center gap-4 h-[3vh]">
-                                <img
-                                    src="./img/icon_x.svg"
-                                    alt="X（旧Twitter）"
-                                />
-                                <img
-                                    src="./img/icon_instagram.svg"
-                                    alt="インスタグラム"
-                                />
-                                <img
-                                    src="./img/icon_facebook.svg"
-                                    alt="フェイスブック"
-                                />
+                                <a href="https://x.com/Breeze_Group/">
+                                    <img
+                                        src="./img/icon_x.svg"
+                                        alt="X（旧Twitter）"
+                                        className="h-[100%]"
+                                    />
+                                </a>
+                                <a href="https://www.instagram.com/breezegroup_officialaccount/">
+                                    <img
+                                        src="./img/icon_instagram.svg"
+                                        alt="instagram"
+                                        className="h-[100%]"
+                                    />
+                                </a>
+                                <a href="https://www.facebook.com/bzg.shared/">
+                                    <img
+                                        src="./img/icon_facebook.svg"
+                                        alt="facebook"
+                                        className="h-[100%]"
+                                    />
+                                </a>
                             </div>
                         </div>
                     </div>
