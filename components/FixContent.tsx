@@ -94,21 +94,21 @@ function FixContent() {
                                     <img
                                         src="./img/icon_x.png"
                                         alt="X（旧Twitter）"
-                                        className="h-[100%]"
+                                        className="h-[3vh] w-[3vh]"
                                     />
                                 </a>
                                 <a href="https://www.instagram.com/breezegroup_officialaccount/">
                                     <img
                                         src="./img/icon_instagram.png"
                                         alt="instagram"
-                                        className="h-[100%]"
+                                        className="h-[3vh] w-[3vh]"
                                     />
                                 </a>
                                 <a href="https://www.facebook.com/bzg.shared/">
                                     <img
                                         src="./img/icon_facebook.png"
                                         alt="facebook"
-                                        className="h-[100%]"
+                                        className="h-[3vh] w-[3vh]"
                                     />
                                 </a>
                             </div>
